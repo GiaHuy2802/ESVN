@@ -1,0 +1,149 @@
+.esbus{
+    margin-bottom: var( --block-margin);
+}
+.esbus .wrp{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    position: relative;
+
+}
+.esbus .wrp .header{
+    width: 864px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    line-height: 24px;
+
+}
+h1.heading{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -110px;
+    background: #fff;
+    border-radius: 40px 40px 0 0;
+    padding: 40px 20px 24px;
+    margin: 0;
+    line-height: 48px;
+
+}
+.esbus .wrp .businfor{
+    
+    display: flex;
+    flex-direction: column;
+    width: 864px;
+}
+.esbus .wrp .businfor .inforhead{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: 600;
+    color: var(--color-primary);
+    padding: 16px;
+
+
+}
+.esbus .wrp .businfor .seribus{
+     border-top: 1px solid #dcdcdc;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+}
+.esbus .wrp .businfor .seribus .busitem{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+
+}
+.esbus .wrp .businfor .seribus .address{
+    width: 50%;
+    line-height: 24px;
+    font-size: 14px;
+}
+.esbus .wrp .businfor .seribus .busitem .row{
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    line-height: 24px;
+    color: #9F1B32;
+    font-weight: var(--font-weightpri);
+    align-items: baseline;
+    
+
+}
+.esbus .det{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.esbus .det1{
+    display: flex;
+    align-items: baseline   ;
+    gap: 5px;
+}
+.esbus .wrp .businfor .seribus .busitem .row strong{
+    
+    width: 100%;
+    color: var(--color-primary);
+    font-weight: var(--font-weightpri)
+}
+.esbus .wrp .businfor .seribus .busitem .row span{
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color-default);
+}
+@media(max-width:1199px){
+    .esbus{
+        padding: 0 16px;
+        margin-bottom: var(--block-margin-primary);
+    }
+    .esbus .wrp{
+        gap: 32px;
+    }
+}
+@media(max-width:991px){
+    .esbus .wrp .header{
+        width: unset;
+    }
+    .esbus .wrp .businfor{
+        width: unset;
+    }
+}
+@media(max-width:480px){
+    .esbus .wrp{
+        gap: 16px;
+    }
+    .esbus .wrp .businfor .inforhead{
+        display: none;
+    }
+    .esbus .wrp .businfor .seribus{
+        padding: 16px 16px;
+        border-top: unset;
+        border-bottom: 1px solid #dcdcdc;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    .esbus .wrp .businfor .seribus .busitem{
+        width: 100%;
+    }
+    .esbus .wrp .businfor .seribus .address{
+        width: 100%;
+    }
+    .esbus br{
+        display: none;
+    }
+    .esbus .wrp .businfor .seribus:last-child{
+        border: unset;
+    }
+}

@@ -1,0 +1,6 @@
+.clotherdetail .wrp .header a.girl{
+    border: unset;
+}
+.clotherdetail .wrp .header a.boy{
+    border-bottom: 3px solid black;
+}

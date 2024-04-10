@@ -1,0 +1,6 @@
+.unimenu .wrp .header a.boy{
+    border: unset;
+}
+.unimenu .wrp .header a.girl{
+    border-bottom: 3px solid black;
+}

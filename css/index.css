@@ -1,0 +1,363 @@
+.homepage{
+    margin-bottom: var(--block-margin);
+}
+.homepage .item{
+    position: relative;
+    
+}
+.homepage .item .infor{
+    position: absolute;
+    bottom: 112px;
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    align-items: center;
+}
+.homepage .heading{
+    font-weight: 674;
+    font-size: 44px ;
+}
+.homepage .item .infor .row{
+    color   :var(--color-default);
+    line-height: 24px;
+}
+
+.homepage .item .infor a{
+    border-radius: 8px;
+    background: #9F1B32;
+    padding: 16px 40px;
+    color: #fff;
+}
+.aboutus{
+    margin-bottom: var(--block-margin);
+}
+.aboutus .wrp{
+    gap: 60px;
+    width: 864px;
+    display: flex;
+    flex-direction: row;
+}
+.aboutus .wrp a{
+    border-radius: 8px;
+    border: 1px solid #616161;
+    padding: 16px 40px;
+    font-weight: 600;
+}
+.aboutus .wrp a:hover{
+    background: #9F1B32;
+    color: white;
+}
+.aboutus2 a:hover{
+    background: #9F1B32;
+    color: white;
+}
+.aboutus .aboutvn{
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    align-items: flex-start;
+}
+.aboutus .aboutvn .row{
+    line-height: 24px;
+}
+.aboutus.role .aboutvn{
+        order: 2
+        ;
+}
+.aboutvn .heading{
+
+    width: 50%;
+    line-height: 50px;
+}
+
+.howdo{
+    margin-bottom: var(--block-margin);
+}
+.howdo .wrp{
+    display: flex;
+    width: 864px;
+    flex-direction: column;
+    gap: 64px;
+}
+.howdo .wrp .heading{
+    text-align: center;
+}
+.howdo .wrp .groupitem{
+    display: flex;
+}
+.howdo .wrp .groupitem .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 32px;
+}
+.howdo .wrp .groupitem .item h1{
+    font-size: 20px;
+    color: var(--color-primary);
+}
+.howdo .wrp .groupitem .item .row{
+    line-height: 24px;
+}
+.howdo .wrp .groupitem .item:nth-child(2) {
+    border-left: 1px solid #dcdcdc;
+    border-right: 1px solid #dcdcdc;
+}
+
+.aboutus2{
+    margin-bottom: var(--block-margin);
+    background: #FFFCEF;
+    padding: 60px 0;
+
+}
+.aboutus2 .wrp{
+    width: 1920px;
+    gap: 64px;
+    display: flex;
+    flex-direction: row;
+}
+.aboutus2 .wrp img{
+    width: 50%;
+}
+.aboutus2 .aboutvn{
+    line-height: 24px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    align-items: flex-start;
+}
+.aboutus2 a{
+    border-radius: 8px;
+    padding: 16px 40px;
+    border: 1px solid #616161;
+    font-weight: 600;
+}
+
+.menu{
+    margin-bottom: var(--block-margin);
+}
+.menu .wrp{
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    position: relative;
+}
+.menu .wrp .heading{
+    text-align: center;
+}
+.menu .wrp .groupitem{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+.menu .wrp .groupitem .item{
+    font-size: 20px;
+    color: #141414;
+    font-weight: 600;
+    width: calc((100% - 128px) /4 );
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    text-align: center;
+}
+.menu .wrp .groupitem .item img{
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+footer .heading{
+    font-size: 20px;
+}
+
+header .wrp nav a:hover{
+    border-radius: 8px;
+    background: #9F1B32;
+    color: white;
+    padding: 5px;
+}
+header .wrp nav a {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+header .wrp nav a:hover {
+    transform: scale(1.1);
+  }
+.menu .wrp .groupitem .item {
+    transition: transform 0.5s ease-in-out;
+  }
+.menu .wrp .groupitem .item:hover {
+    transform: scale(1.1);
+  }
+
+@media(max-width:1199px){
+    header .wrp nav a{
+
+        transition: none;
+        transform: none;
+    }
+    header .wrp nav a:hover{
+        color: var(--color-primary);
+        background: unset;
+        transform: unset;
+        padding: unset;
+    }
+    .aboutus2 .wrp{
+        width: unset;
+    }
+    .menu .wrp .groupitem{
+        justify-content: center;
+    }
+    .homepage, .aboutus, .howdo, .aboutus2{
+        margin-bottom: 40px;
+    }
+    .aboutus .wrp a:hover{
+        background: unset;
+        color: unset;
+    }
+}
+
+@media(min-width:768px) and (max-width:991px){
+    .aboutus .wrp{
+        width: unset;
+        padding: 0 16px;
+    }
+    .aboutus .aboutvn{
+        width: 50%;
+        line-height: 24px;
+    }
+    .aboutus img{
+        width: 50%;
+    }
+    .howdo .wrp{
+        width: unset;
+        padding: 0 16px;
+    }
+    .aboutvn .heading{
+        width: unset;
+    }
+    .homepage .item .infor{
+        position: unset;
+        transform: none;
+        padding: 0 25px 25px;
+    }
+    .homepage .item{
+        background: #fff9dd;
+    }
+    .copyright .wrp{
+        width: unset;
+       padding: 32px 16px
+
+    }
+    .rowsocial {
+        gap: 5px;
+    }
+}
+@media(max-width:768px) {
+    
+    .howdo .wrp .groupitem .item{
+        padding:16px 24px
+    }
+    .aboutus .wrp{
+        width: unset;
+        padding: 0 16px;
+    }
+    .aboutus .aboutvn{
+        width: 50%;
+        line-height: 24px;
+    }
+    .aboutus img{
+        width: 50%;
+    }
+    .howdo .wrp{
+        width: unset;
+        padding: 0 16px;
+    }
+    .aboutvn .heading{
+        width: unset;
+    }
+    .homepage .item .infor{
+        position: unset;
+        transform: none;
+        padding: 0 25px 25px;
+    }
+    .homepage .item{
+        background: #fff9dd;
+    }
+    
+}
+@media(max-width:480px){
+    .homepage .heading {
+        font-size: 28px;
+    }
+    .howdo .wrp{
+        gap: 24px;
+    }
+    .howdo .wrp .groupitem{
+        flex-direction: column;
+        gap: 32px;
+    }
+    .aboutus2 .wrp{
+        flex-direction: column;
+        gap: 24px;
+    }
+    .aboutus .wrp{
+        flex-direction: column;
+    }
+    .howdo .wrp .groupitem .item:nth-child(2){
+        border: unset;
+    }
+   
+    .aboutvn .heading{
+        font-size: 28px; 
+    }
+    .aboutus img{
+        width: 100%;
+    }
+    .aboutus2{
+        padding: 40px 16px;
+    }
+    .aboutus2 br{
+        display: none;
+    }
+    .aboutus2 .wrp img{
+        width: 100%;
+    }
+    .menu{
+        padding: 0 16px;
+        margin-bottom: var(--block-margin-primary);
+    }
+    .menu .wrp{
+        gap: 24px;
+    }
+    .menu .wrp .groupitem{
+        gap: 15px;
+
+    }
+    .menu .wrp .groupitem .item{
+        width: calc((100% - 15px) /2);
+    }
+    .menu .wrp .groupitem .item:hover{
+        transform: unset;
+    }
+    .aboutus .aboutvn{
+        order: 2;
+        width: 100%;
+        row-gap: 16px;
+    }
+    .aboutus .wrp{
+        gap: 24px;
+    }
+    .aboutus2 .aboutvn {
+        row-gap: 16px;
+    }
+    .menu .wrp .heading{
+        font-size: 28px;
+    }
+    .howdo .wrp .heading{
+        font-size: 28px;
+    }
+    
+}

@@ -1,0 +1,198 @@
+.productdetail{
+    padding: 48px;
+    margin-bottom: var(   --block-margin)
+}
+
+.productdetail .wrp{
+    display: flex;
+    flex-direction: row;
+    gap: 144px;
+}
+
+.productdetail .wrp .colright .headname{
+    font-weight: 568;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--color-primary);
+}
+.productdetail .wrp .colright .wrp2 .row1{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.productdetail .wrp .colright .wrp2 .row1 .itemsdetail{
+    
+    gap: 48px;
+    display: flex;
+    flex-direction: row;
+
+}
+.productdetail .wrp .colright .wrp2 .row1 .itemsdetail .detail{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    line-height: 24px;
+
+}
+.productdetail .wrp .colright .wrp2 .row1 .itemsdetail .detail .menuname{
+    color: #9F1B32;
+}
+.productdetail .wrp .colright .wrp2 .row1 .itemsdetail .detail span{
+    font-weight:var(--font-weightpri);
+    color: var(--color-second);
+}
+.productdetail .wrp .colright .wrp2 .row1 .itemsdetail .detail .contain{
+    
+    background: #E6F6FF;
+    display: flex;
+    padding: 16px;
+    gap: 8px;
+    color: #00368C;
+
+}
+.allergenguide {
+    text-decoration: underline;
+    color: #9F1B32;
+  }
+.productdetail .wrp .colright .wrp2 .row2{ 
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    line-height: 24px;
+
+}
+
+.productdetail .wrp .colright .wrp2 .row2 .ingred{
+    
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 24px;
+}
+.productdetail .wrp .colright .wrp2 .row2 .ingred img{
+
+    height: 48px;
+
+}
+.productdetail .wrp .colright .wrp2 .row3{ 
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    line-height: 24px;
+
+}
+.productdetail .wrp .colright .wrp2 .row3 .contain{ 
+   
+    display: flex;
+    gap: 8px;
+
+
+}
+.productdetail .wrp .colright .wrp2 .row3 .nutritional{
+    display: flex;
+    flex-direction: column;
+}
+.productdetail .wrp .colright .wrp2 .row3 .nutritional .row{    
+    display: flex;
+    gap: 144px;
+    justify-content: space-between;
+    padding: 16px 12px;
+}
+.productdetail .wrp .colright .wrp2 .row3 .nutritional .row:nth-child(odd){
+    background: #FBF2F3;
+
+}
+.productdetail .wrp .colright .wrp2 .row3 .nutritional .row:nth-child(even){
+    background: #fff;
+}
+.productdetail .wrp .colright .wrp2 .row3 .nutritional .row.head{    
+    gap: 300px;
+    background: unset;
+    justify-content: end;
+    border-bottom: 1px solid #dcdcdc;
+}
+@media(max-width:1199px){
+.productdetail{
+    margin-bottom: 16px;
+    padding-top: 0;
+}
+.productdetail .wrp{
+    flex-direction: column;
+    gap: 32px;
+}
+.productdetail .showmenu {
+    display: block;
+    color: #9f1b32;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    padding: 16px 127px;
+    border-bottom: 1px solid #dcdcdc;
+}
+.productdetail .wrp .colleft{
+    display: none;
+}
+.productdetail .wrp .colright{
+    width: 100%;
+}
+.listmenu.active{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 10;
+}
+.listmenu .wrp{
+    width: 80%;
+    background: #fff;
+    height: 100%;
+    padding: 15px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    overflow-y: auto;
+}
+.listmenu .wrp .colleft{
+    width: unset;
+}
+}
+@media(max-width:991px){
+    .productdetail .wrp .colright .wrp2 .row3 .nutritional .row.head {
+    gap: 235px;
+    }
+}
+@media(max-width:768px){
+.productdetail .wrp .colright .wrp2 .row3 .nutritional .row.head{
+        gap: 200px;
+    }
+}
+@media(max-width:480px){
+.productdetail{
+        padding: unset;
+    }
+.productdetail .wrp .colright .wrp2 .row1 .itemsdetail{
+    flex-direction: column;
+    gap: 24px;
+} 
+.productdetail .colright .wrp2{
+    gap: 40px;
+}
+.productdetail .wrp .colright .wrp2 .row3 .nutritional .row {
+
+    gap: 130px;
+}
+.productdetail .wrp .colright .wrp2 .row3 .nutritional .row.head {
+gap: 60px;
+}
+}
